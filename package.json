@@ -1,7 +1,10 @@
 {
-  "name": "@louiscasinelli/ts-kit",
-  "version": "0.0.0",
+  "name": "@avoidstarch/ts-kit",
+  "version": "0.1.0",
+  "description": "Personal kit of shared TypeScript types and functions.",
   "type": "module",
+  "license": "MIT",
+  "author": "Louis Casinelli",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -11,10 +14,19 @@
     }
   },
   "files": ["dist"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aVOIDSTARch/ts-kit.git"
+  },
+  "keywords": ["typescript", "types", "utilities", "kit"],
   "scripts": {
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build"
   },
   "devDependencies": {
-    "typescript": "^6.0.3"
+    "typescript": "^5"
   }
 }
