@@ -24,8 +24,7 @@
   "keywords": ["typescript", "types", "utilities", "kit"],
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "test": "vitest run",
-    "prepare": "npm run build"
+    "test": "vitest run"
   },
   "peerDependencies": {
     "prettier": "^3",
