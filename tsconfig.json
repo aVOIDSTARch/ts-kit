@@ -1,10 +1,14 @@
-// tsconfig.json — emit declarations, nothing else
 {
   "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "declaration": true,
-    "emitDeclarationOnly": true,    // types only; no JS — it's a type package
     "outDir": "dist",
-    "strict": true
+    "rootDir": "src",
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true
   },
   "include": ["src"]
 }
