@@ -24,9 +24,25 @@
   "keywords": ["typescript", "types", "utilities", "kit"],
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
     "prepare": "npm run build"
   },
+  "peerDependencies": {
+    "prettier": "^3",
+    "@biomejs/js-api": "^6",
+    "@biomejs/wasm-nodejs": "^2"
+  },
+  "peerDependenciesMeta": {
+    "prettier": { "optional": true },
+    "@biomejs/js-api": { "optional": true },
+    "@biomejs/wasm-nodejs": { "optional": true }
+  },
   "devDependencies": {
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^3",
+    "@types/node": "^22",
+    "prettier": "^3",
+    "@biomejs/js-api": "^6",
+    "@biomejs/wasm-nodejs": "^2"
   }
 }
