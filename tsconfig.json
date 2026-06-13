@@ -1,0 +1,10 @@
+// tsconfig.json — emit declarations, nothing else
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,    // types only; no JS — it's a type package
+    "outDir": "dist",
+    "strict": true
+  },
+  "include": ["src"]
+}
