@@ -13,7 +13,9 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -21,27 +23,39 @@
     "type": "git",
     "url": "git+https://github.com/aVOIDSTARch/ts-kit.git"
   },
-  "keywords": ["typescript", "types", "utilities", "kit"],
+  "keywords": [
+    "typescript",
+    "types",
+    "utilities",
+    "kit"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "vitest run"
   },
   "peerDependencies": {
-    "prettier": "^3",
     "@biomejs/js-api": "^6",
-    "@biomejs/wasm-nodejs": "^2"
+    "@biomejs/wasm-nodejs": "^2",
+    "prettier": "^3"
   },
   "peerDependenciesMeta": {
-    "prettier": { "optional": true },
-    "@biomejs/js-api": { "optional": true },
-    "@biomejs/wasm-nodejs": { "optional": true }
+    "prettier": {
+      "optional": true
+    },
+    "@biomejs/js-api": {
+      "optional": true
+    },
+    "@biomejs/wasm-nodejs": {
+      "optional": true
+    }
   },
   "devDependencies": {
-    "typescript": "^5",
-    "vitest": "^3",
+    "@biomejs/js-api": "^6",
+    "@biomejs/wasm-nodejs": "^2",
     "@types/node": "^25.9.3",
     "prettier": "^3",
-    "@biomejs/js-api": "^6",
-    "@biomejs/wasm-nodejs": "^2"
-  }
+    "typescript": "^5",
+    "vitest": "^3"
+  },
+  "packageManager": "npm@11.17.0"
 }
