@@ -25,7 +25,11 @@ describe("resolve", () => {
   });
   it("handles deep async nesting in order", async () => {
     expect(await resolve(["a", [() => Promise.resolve(["b", "c"]), "d"], "e"])).toEqual([
-      "a", "b", "c", "d", "e",
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
     ]);
   });
 });

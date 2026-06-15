@@ -2,9 +2,22 @@
   "name": "@avoidstarch/ts-kit",
   "version": "0.1.0",
   "description": "Personal kit of shared TypeScript types and functions.",
-  "type": "module",
+  "keywords": [
+    "kit",
+    "types",
+    "typescript",
+    "utilities"
+  ],
   "license": "MIT",
   "author": "Louis Casinelli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aVOIDSTARch/ts-kit.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -13,25 +26,20 @@
       "import": "./dist/index.js"
     }
   },
-  "files": [
-    "dist"
-  ],
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aVOIDSTARch/ts-kit.git"
-  },
-  "keywords": [
-    "typescript",
-    "types",
-    "utilities",
-    "kit"
-  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "vitest run"
+  },
+  "devDependencies": {
+    "@biomejs/js-api": "^6",
+    "@biomejs/wasm-nodejs": "^2",
+    "@types/node": "^25.9.3",
+    "prettier": "^3",
+    "typescript": "^5",
+    "vitest": "^3"
   },
   "peerDependencies": {
     "@biomejs/js-api": "^6",
@@ -48,14 +56,6 @@
     "@biomejs/wasm-nodejs": {
       "optional": true
     }
-  },
-  "devDependencies": {
-    "@biomejs/js-api": "^6",
-    "@biomejs/wasm-nodejs": "^2",
-    "@types/node": "^25.9.3",
-    "prettier": "^3",
-    "typescript": "^5",
-    "vitest": "^3"
   },
   "packageManager": "npm@11.17.0"
 }
