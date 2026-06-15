@@ -39,7 +39,7 @@
   "devDependencies": {
     "typescript": "^5",
     "vitest": "^3",
-    "@types/node": "^22",
+    "@types/node": "^25.9.3",
     "prettier": "^3",
     "@biomejs/js-api": "^6",
     "@biomejs/wasm-nodejs": "^2"
