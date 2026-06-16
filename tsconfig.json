@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "paths": {
+      "@types": ["./types/*"]
+    },
     "target": "ES2022",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
